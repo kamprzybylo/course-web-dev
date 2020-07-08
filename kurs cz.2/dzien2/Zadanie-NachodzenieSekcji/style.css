@@ -1,0 +1,33 @@
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    line-height: 10vh;
+    z-index: 1;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+header {
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    top: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    position: relative;
+    top: 100vh;
+    height: 200vh;
+    background-image: linear-gradient(to bottom left, white, green, blue, violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

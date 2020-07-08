@@ -1,0 +1,111 @@
+html {
+    --hei: 12%;
+    --height1: calc(0% - 10%);
+    --height2: calc(var(--height1) - var(--hei));
+    --height3: calc(var(--height2) - var(--hei));
+    --height4: calc(var(--height3) - var(--hei) + 15%);
+    --height5: calc(var(--height4) - var(--hei));
+    --height6: calc(var(--height5) - var(--hei) - 15%);
+    /* --height7: calc(var(--height6) - var(--hei));
+    --height8: calc(var(--height7) - var(--hei));
+    --height9: calc(var(--height8) - var(--hei));
+    --height10: calc(var(--height9) - var(--hei));
+    --height11: calc(var(--height10) - var(--hei)); */
+    --size: 50vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+div.picture {
+
+    width: calc((var(--size)*16)/9);
+    height: var(--size);
+    background-color: lightblue;
+    overflow: hidden;
+    margin: 50px auto;
+    position: relative;
+
+    z-index: -100;
+}
+
+
+div img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+div img:nth-child(1) {
+    bottom: var(--height1);
+
+}
+
+div img:nth-child(2) {
+    bottom: var(--height2);
+
+}
+
+div img:nth-child(3) {
+    bottom: var(--height3);
+
+}
+
+div img:nth-child(4) {
+    bottom: var(--height4);
+
+}
+
+div img:nth-child(5) {
+    bottom: var(--height5);
+
+}
+
+div img:nth-child(6) {
+    bottom: var(--height6);
+
+}
+
+div img:nth-child(7) {
+    width: 10%;
+    top: calc(5vh - 5%);
+    left: 10%;
+    z-index: -1;
+}
+
+div img:nth-child(8) {
+    width: 50%;
+    top: 10%;
+    left: -10%;
+    z-index: -1;
+}
+
+div img:nth-child(9) {
+    width: 50%;
+    top: 10%;
+    right: 0;
+    left: auto;
+    z-index: -1;
+}
+
+div img:nth-child(10) {
+    width: 40%;
+    top: 20%;
+    right: 0;
+    left: auto;
+
+}
+
+div img:nth-child(11) {
+    width: 5%;
+    top: 70%;
+
+    left: 5%;
+}

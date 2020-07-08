@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie2</title>
+    <style>
+        html {
+            font-family: roboto, sans-serif;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 500px;
+            font-size: 1.5em;
+        }
+
+        p.italic {
+            margin: 30px auto;
+            /* to samo co: margin-top: 30px
+            margin-bottom:30px*/
+            color: yellow;
+            background-color: black;
+            text-align: justify;
+        }
+
+        p.italic:hover {
+            color: green;
+            background-color: gray;
+            text-decoration: underline;
+            line-height: 200%;
+        }
+
+        p.italic+p {
+            font-style: italic;
+            text-align: center;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+
+
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum minus placeat ab doloribus, repellendus illum non! Vel dolores fugiat soluta, voluptas deserunt ut ea, aut perferendis eligendi, corrupti laudantium eaque!</p>
+    <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, animi quibusdam a rem, atque, molestiae veritatis eum sint deleniti, iste magnam pariatur quam unde quaerat culpa odit maiores laborum. Porro.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quod suscipit officiis provident, odit tenetur ipsum maxime vero odio quam dolorum placeat ratione voluptates deserunt eos eveniet, laudantium harum saepe?</p>
+</body>
+
+</html>

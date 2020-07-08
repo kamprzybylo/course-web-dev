@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:nth-of-type(1) {
+            position: fixed;
+            top: 40px;
+            left: 50px;
+        }
+
+        button:nth-of-type(2) {
+            position: fixed;
+            top: 40px;
+            right: 50px;
+        }
+
+        body {
+            line-height: 100vh;
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button>dodaj</button>
+    <button>odejmij</button>
+    Liczba kliknięć: <span class="counter">0</span>
+    <script>
+        // potrzebne zmienne
+        let counter = 0;
+
+        // pobranie elementów które porzebujemy
+        const btn1 = document.querySelector("button:nth-of-type(1)");
+        const btn2 = document.querySelector("button:nth-of-type(2)")
+
+        const spanCounter = document.querySelector("span.counter");
+        // const clickElement = document.querySelector("body");
+
+        // nasłuchiwanie na zdarzenie + okreslenie akcji w funkcji
+        btn1.addEventListener("click", function () {
+            counter++;
+            // console.log(counter);
+            spanCounter.textContent = counter;
+        })
+
+        btn2.addEventListener("click", function () {
+            counter--;
+            spanCounter.textContent = counter
+        })
+    </script>
+</body>
+
+</html>

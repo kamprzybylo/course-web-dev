@@ -1,0 +1,17 @@
+body {
+    height: 200vh;
+
+}
+
+.menu_ico i {
+    position: fixed;
+    right: 50px;
+    top: 30px;
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+}
+
+.menu_ico i:hover {
+    color: black;
+}

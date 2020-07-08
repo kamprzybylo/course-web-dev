@@ -1,0 +1,20 @@
+a,
+h1,
+h2 {
+    display: block;
+    font-size: 26px;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    margin-top: 2000px;
+    margin-bottom: 200px;
+}
+
+h2 {
+    margin-top: 4000px;
+    margin-bottom: 200px;
+}

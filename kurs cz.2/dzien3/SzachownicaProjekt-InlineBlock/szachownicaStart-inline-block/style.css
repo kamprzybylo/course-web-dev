@@ -1,0 +1,26 @@
+.board {
+    width: 30vw;
+    height: 30vw;
+    border: 10px solid black;
+    font-size: 0;
+    position: absolute;
+    top: calc(50vh - 15vw - 10px);
+    left: calc(50vw - 15vw - 10px);
+}
+
+
+div span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+div span:nth-child(1) {
+    background-color: red;
+
+}
+
+div span:nth-last-child(1) {
+    background-color: red;
+
+}

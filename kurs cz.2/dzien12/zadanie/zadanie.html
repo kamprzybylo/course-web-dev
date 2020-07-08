@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        section {
+            display: flex;
+            height: 64px;
+        }
+
+        div {
+            flex-grow: 1;
+            border: 2px solid black;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="orange interface"></div>
+        <div class="green interface"></div>
+        <div class="increase interface">+</div>
+        <div class="move interface">-></div>
+    </section>
+    <p class="text">tekst</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $('.interface').on('click', function () {
+            // console.log(this);
+            // console.log($(this));
+            // console.log($(this).attr('class'));
+
+
+
+            if ($(this).hasClass('orange')) {
+                console.log("prawda w pomarańczowy");
+                // $('body').toggleClass('orange');
+                // $("body").css('background-color', 'orange');
+                // $("body").css({
+                //     "background-color": "orange"
+                // })
+                $('body').attr('class', 'orange')
+            }
+
+            if ($(this).hasClass('green')) {
+                console.log('prawda w zielony');
+                // $('body').css({
+                //     'background-color': 'green'
+                // })
+                $('body').attr('class', 'green')
+            }
+
+            if ($(this).hasClass('increase')) {
+                console.log('prawda w plus');
+                $("p").animate({
+                    'font-size': '+=5'
+                }, 500)
+            }
+            if ($(this).hasClass('move')) {
+                console.log('prawda w strzałkę');
+                $('p').animate({
+                    'left': '+=15px',
+                    'letter-spacing': '+=2px'
+                })
+
+            }
+
+
+
+            // if (this.classList.contains('green')) {
+            //     console.log("prawda w zielony")
+            // }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        @media(max-width:640px) {
+            header {
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <h1>Tanio</h1>
+        <h1>Szybko</h1>
+        <h1>Średnio</h1> -->
+        <video src="http://websamuraj.pl/examples/yt/wideo/video.mp4" autoplay loop playsinline muted></video>
+    </header>
+</body>
+
+</html>
